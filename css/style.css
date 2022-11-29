@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+:root{
+    --backg: rgb(98, 203, 255);
+    --font: rgb(0, 0, 0);
+    --preto: black;
+    --backgbox: rgb(69, 125, 248);
+    --butborder: darkblue;
+    --shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    --acess: black;
+    --navbakg: rgb(69, 125, 248);
+}
+
+.light-mode:root{
+    --backg: rgb(124, 124, 124);
+    --font: black;
+    --preto: black;
+    --backgbox: white;
+    --butborder: rgb(0, 0, 0);
+    --shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    --acess: black;
+    --navbakg: rgb(255, 255, 255);
+}
+
+.dark-mode:root{
+    --backg: rgb(50, 49, 49);
+    --font: white;
+    --preto: black;
+    --backgbox: black;
+    --butborder: rgb(50, 49, 49);
+    --shadow: 0 rgba(0, 0, 0, 0.2);
+    --acess: rgb(255, 255, 255);
+    --navbakg: rgb(0, 0, 0);
+}
+
+nav{
+    background-color: var(--navbakg);
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    margin: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    padding-left: 30px;
+}
+
+a img {
+    width: 50px;
+}
+
+a{
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--acess);
+    padding: 0 5px;
+}
+
+h1{
+    display: flex;
+    font-size: 35px;
+}
+
+.botoes {
+    display: flex;
+    padding-right: 18px;
+}
+
+.box {
+    margin-left: center;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.box {
+    background: var(--backgbox)
+}
+
+.box{
+    box-shadow: var(--shadow);
+}
+
+button {
+    text-decoration: none;
+    padding: 13px;
+    margin: 2%;
+    margin-left: 1000px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Anek Devanagari', sans-serif;
+    border: solid 4px;
+}
+
+button{
+    border-color: var(--butborder);
+}
+
+p {
+    padding: 30px;
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+label {
+    font-size: 28px;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.left {
+    text-align: left;
+}
+
+body {
+    background-color: var(--backg);
+    font-family: 'Anek Devanagari', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+p, h1, label {
+    color: var(--font);
+}
+
+button {
+    color: var(--preto)
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.2);
+}
